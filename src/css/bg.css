@@ -1,0 +1,15 @@
+.blackbg{
+    background: url('../assets/images/background/blackbg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blackbg2{
+    background: url('../assets/images/background/blackbg2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blackgraybg{
+    background: url('../assets/images/background/blackgraybg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

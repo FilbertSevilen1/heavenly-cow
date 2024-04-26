@@ -7,7 +7,7 @@ function NavbarButton({ name, link }) {
   const location = useLocation();
   return (
     <button
-      className="text-xl md:text-2xl text-white p-4 mx-2 md:mx-4 xl:mx-8 font-bold"
+      className="text-xl md:text-2xl text-white p-2 md:p-4 mx-2 md:mx-4 xl:mx-8 font-bold"
       onClick={() => navigate(link)}
     >
       {name}
