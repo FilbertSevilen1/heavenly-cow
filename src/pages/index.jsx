@@ -10,10 +10,10 @@ import ribeye from "../assets/images/food/ribeye.webp";
 import sirloin from "../assets/images/food/sirloin.webp";
 import tenderloin from "../assets/images/food/tenderloin.webp";
 
-import restaurant1 from "../assets/images/restaurant/restaurant1.webp"
-import restaurant2 from "../assets/images/restaurant/restaurant2.webp"
-import restaurant3 from "../assets/images/restaurant/restaurant3.webp"
-import restaurant4 from "../assets/images/restaurant/restaurant4.webp"
+import restaurant1 from "../assets/images/restaurant/restaurant1.webp";
+import restaurant2 from "../assets/images/restaurant/restaurant2.webp";
+import restaurant3 from "../assets/images/restaurant/restaurant3.webp";
+import restaurant4 from "../assets/images/restaurant/restaurant4.webp";
 
 function Home() {
   return (
@@ -80,10 +80,18 @@ function Home() {
         </div>
       </div>
       <div className="blackgraybg">
-        <div className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif"
+        >
           Our Menus
         </div>
-        <div className="w-full flex flex-between flex-wrap bg-black flex-row">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          className="w-full flex flex-between flex-wrap bg-black flex-row"
+        >
           <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
             <img
               src={wagyu}
@@ -132,10 +140,18 @@ function Home() {
         </div>
       </div>
       <div className="blackbg2">
-        <div className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif"
+        >
           Our Restaurants
         </div>
-        <div className="w-full flex flex-between flex-wrap bg-black flex-row">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          className="w-full flex flex-between flex-wrap bg-black flex-row"
+        >
           <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
             <img
               src={restaurant1}
