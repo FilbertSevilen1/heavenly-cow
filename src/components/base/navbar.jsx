@@ -28,12 +28,12 @@ function Navbar() {
         <div
           className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}
         >
-          <NavbarButton name="Menus" link="/menus"></NavbarButton>
+          <NavbarButton name="Menu" link="/menu"></NavbarButton>
         </div>
         <div
           className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}
         >
-          <NavbarButton name="Events" link="/events"></NavbarButton>
+          <NavbarButton name="Events" link="/event"></NavbarButton>
         </div>
         <div
           className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}

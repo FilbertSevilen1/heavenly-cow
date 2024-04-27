@@ -79,19 +79,11 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="blackgraybg">
-        <div
-          data-aos="fade-down"
-          data-aos-duration="500"
-          className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif"
-        >
+      <div className="blackgraybg" data-aos="fade-down" data-aos-duration="500">
+        <div className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif">
           Our Menus
         </div>
-        <div
-          data-aos="fade-down"
-          data-aos-duration="500"
-          className="w-full flex flex-between flex-wrap bg-black flex-row"
-        >
+        <div className="w-full flex flex-between flex-wrap bg-black flex-row">
           <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
             <img
               src={wagyu}
@@ -139,17 +131,11 @@ function Home() {
           </button>
         </div>
       </div>
-      <div className="blackbg2">
-        <div
-          data-aos="fade-down"
-          data-aos-duration="500"
-          className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif"
-        >
+      <div className="blackbg2" data-aos="fade-down" data-aos-duration="500">
+        <div className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif">
           Our Restaurants
         </div>
         <div
-          data-aos="fade-down"
-          data-aos-duration="500"
           className="w-full flex flex-between flex-wrap bg-black flex-row"
         >
           <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">

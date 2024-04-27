@@ -5,6 +5,8 @@ import Home from './pages';
 import Navbar from './components/base/navbar';
 import { useEffect } from 'react';
 import Aos from 'aos';
+import Footer from './components/base/footer';
+import Menu from './pages/menu';
 function App() {
   useEffect(()=>{
     Aos.init()
@@ -16,7 +18,11 @@ function App() {
       </Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/menu" element={<Menu />}></Route>
       </Routes>
+      <Footer>
+
+      </Footer>
     </BrowserRouter>
   );
 }

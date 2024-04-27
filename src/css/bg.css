@@ -12,4 +12,5 @@
     background: url('../assets/images/background/blackgraybg.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }

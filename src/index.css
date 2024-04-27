@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: black;
 }
 
 code {
@@ -56,4 +57,10 @@ code {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .text{
+    font-size: 20px;
+  }
 }
