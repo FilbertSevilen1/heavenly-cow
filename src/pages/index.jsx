@@ -14,8 +14,10 @@ import restaurant1 from "../assets/images/restaurant/restaurant1.webp";
 import restaurant2 from "../assets/images/restaurant/restaurant2.webp";
 import restaurant3 from "../assets/images/restaurant/restaurant3.webp";
 import restaurant4 from "../assets/images/restaurant/restaurant4.webp";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate()
   return (
     <div className="w-full flex flex-col">
       <Carousel
@@ -126,7 +128,7 @@ function Home() {
           </div>
         </div>
         <div className=" border-b-2 border-zinc-400 text-2xl text-white text-center py-12 font-bold font-serif">
-          <button className="mb-8 w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
+          <button onClick={()=>navigate("/menu")} className="mb-8 w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
             Check here for more!
           </button>
         </div>

@@ -11,6 +11,15 @@ import appetizers8 from '../../assets/images/food/appetizers/Shrimp cocktail.web
 import appetizers9 from '../../assets/images/food/appetizers/Spinach and Artichoke Dip.webp'
 import appetizers10 from '../../assets/images/food/appetizers/Stuffed mushrooms.webp'
 
+import breakfast1 from '../../assets/images/food/breakfast/breakfast1.webp'
+import breakfast2 from '../../assets/images/food/breakfast/breakfast2.webp'
+import breakfast3 from '../../assets/images/food/breakfast/breakfast3.webp'
+import breakfast4 from '../../assets/images/food/breakfast/breakfast4.webp'
+import breakfast5 from '../../assets/images/food/breakfast/breakfast5.webp'
+import breakfast6 from '../../assets/images/food/breakfast/breakfast6.webp'
+import breakfast7 from '../../assets/images/food/breakfast/breakfast7.webp'
+import breakfast8 from '../../assets/images/food/breakfast/breakfast8.webp'
+
 import wagyu from "../../assets/images/food/Wagyu A5.webp";
 import ribeye from "../../assets/images/food/ribeye.webp";
 import sirloin from "../../assets/images/food/sirloin.webp";
@@ -48,9 +57,10 @@ function Menu() {
   };
 
   useEffect(() => {
+    window.scrollTo(0,0)
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 390; // Adjust this value based on your needs
+      const threshold = 460; // Adjust this value based on your needs
       const thresholdEnd = 10000;
       // Check if scroll position is beyond the threshold
       setIsSticky(scrollPosition > threshold && scrollPosition < thresholdEnd);
@@ -65,47 +75,47 @@ function Menu() {
   }, []);
   return (
     <div className="w-full flex">
-      <div className="flex blackgraybg">
-        <div className="w-0 md:w-3/12 hidden md:flex">
+      <div className="flex blackgraybg pb-16">
+        <div className="w-0 md:w-[400px] hidden md:flex">
           <div
             className={`${
-              isSticky ? "fixed w-[400px] top-0" : ""
-            }  w-full w-[400px]  mt-16`}
+              isSticky ? "fixed w-[400px] top-0" : "mt-14"
+            }  w-full `}
           >
-            <div className="flex flex-col text-white text-4xl gap-8 py-6 px-8 font-serif font-medium">
+            <div className="flex flex-col text-white text-2xl xl:text-4xl gap-0 py-6 px-8 xl:px-12 font-serif font-medium">
               <button
                 onClick={() => scrollIntoAppetizers()}
-                className={` w-full text-left hover:text-[#ffa200] transition-all`}
+                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:pb-6`}
               >
                 Appetizers
               </button>
               <button
                 onClick={() => scrollIntoBreakfast()}
-                className={` w-full text-left hover:text-[#ffa200] transition-all`}
+                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:py-6`}
               >
                 Breakfast
               </button>
               <button
                 onClick={() => scrollIntoLunch()}
-                className={` w-full text-left hover:text-[#ffa200] transition-all`}
+                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:py-6`}
               >
                 Lunch
               </button>
               <button
                 onClick={() => scrollIntoDinner()}
-                className={` w-full text-left hover:text-[#ffa200] transition-all`}
+                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:py-6`}
               >
                 Dinner
               </button>
               <button
                 onClick={() => scrollIntoDesserts()}
-                className={` w-full text-left hover:text-[#ffa200] transition-all`}
+                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:py-6`}
               >
                 Desserts
               </button>
               <button
                 onClick={() => scrollIntoDrinks()}
-                className={` w-full text-left hover:text-[#ffa200] transition-all`}
+                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-white py-4 xl:py-6`}
               >
                 Drinks
               </button>
@@ -113,7 +123,7 @@ function Menu() {
           </div>
         </div>
         <div
-          className="w-full md:w-9/12"
+          className="w-full md:w-8/12"
           data-aos="fade-down"
           data-aos-duration="500"
         >
@@ -125,7 +135,7 @@ function Menu() {
               Appetizers
             </div>
             <div className="w-full flex flex-between flex-wrap flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers1}
                   alt="Avatar"
@@ -135,7 +145,7 @@ function Menu() {
                   <div class="text">Antipaso Platter</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers2}
                   alt="Avatar"
@@ -145,7 +155,7 @@ function Menu() {
                   <div class="text">Bruschetta</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers3}
                   alt="Avatar"
@@ -155,7 +165,7 @@ function Menu() {
                   <div class="text">Caprese Skewers</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers4}
                   alt="Avatar"
@@ -165,7 +175,7 @@ function Menu() {
                   <div class="text">Chicken Satay</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers5}
                   alt="Avatar"
@@ -175,7 +185,7 @@ function Menu() {
                   <div class="text">Deviled Eggs</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers6}
                   alt="Avatar"
@@ -185,7 +195,7 @@ function Menu() {
                   <div class="text">Mini Crab Cakes</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers7}
                   alt="Avatar"
@@ -195,7 +205,7 @@ function Menu() {
                   <div class="text">Mini Quesadillas</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers8}
                   alt="Avatar"
@@ -205,17 +215,17 @@ function Menu() {
                   <div class="text">Shrimp Cocktail</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers9}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Spinach and Artichoke Dip</div>
+                  <div class="text">Spinach and<br></br>Artichoke Dip</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={appetizers10}
                   alt="Avatar"
@@ -235,84 +245,84 @@ function Menu() {
               Breakfast
             </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={wagyu}
+                  src={breakfast1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Wagyu A5</div>
+                  <div class="text">Tomato Sandwich</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={ribeye}
+                  src={breakfast2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
+                  <div class="text">Butter Pancake</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={tenderloin}
+                  src={breakfast3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
+                  <div class="text">Egg Pancake</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={sirloin}
+                  src={breakfast4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
+                  <div class="text">Egg and Ham</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={wagyu}
+                  src={breakfast5}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Wagyu A5</div>
+                  <div class="text">Waffles</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={ribeye}
+                  src={breakfast6}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
+                  <div class="text">Fried Rice</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={tenderloin}
+                  src={breakfast7}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
+                  <div class="text">Spicy Noodle</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
-                  src={sirloin}
+                  src={breakfast8}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
+                  <div class="text">Ham Sandwich</div>
                 </div>
               </div>
             </div>
@@ -325,7 +335,7 @@ function Menu() {
               Lunch
             </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -335,7 +345,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -345,7 +355,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -355,7 +365,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -365,7 +375,7 @@ function Menu() {
                   <div class="text">Sirloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -375,7 +385,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -385,7 +395,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -395,7 +405,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -415,7 +425,7 @@ function Menu() {
               Dinner
             </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -425,7 +435,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -435,7 +445,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -445,7 +455,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -455,7 +465,7 @@ function Menu() {
                   <div class="text">Sirloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -465,7 +475,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -475,7 +485,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -485,7 +495,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -505,7 +515,7 @@ function Menu() {
               Desserts
             </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -515,7 +525,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -525,7 +535,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -535,7 +545,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -545,7 +555,7 @@ function Menu() {
                   <div class="text">Sirloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -555,7 +565,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -565,7 +575,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -575,7 +585,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -595,7 +605,7 @@ function Menu() {
               Drinks
             </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -605,7 +615,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -615,7 +625,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -625,7 +635,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -635,7 +645,7 @@ function Menu() {
                   <div class="text">Sirloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -645,7 +655,7 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -655,7 +665,7 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -665,7 +675,7 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
                 <img
                   src={sirloin}
                   alt="Avatar"
