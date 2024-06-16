@@ -8,6 +8,9 @@ import Aos from 'aos';
 import Footer from './components/base/footer';
 import Menu from './pages/menu';
 import Event from './pages/events';
+import Gallery from './pages/gallery';
+import About from './pages/about';
+import Reservation from './pages/reservation';
 function App() {
   useEffect(()=>{
     Aos.init()
@@ -21,6 +24,9 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/menu" element={<Menu />}></Route>
         <Route path="/event" element={<Event />}></Route>
+        <Route path="/gallery" element={<Gallery />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/reservation" element={<Reservation />}></Route>
       </Routes>
       <Footer>
 

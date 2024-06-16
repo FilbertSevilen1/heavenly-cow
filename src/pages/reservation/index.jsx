@@ -1,11 +1,11 @@
 import React from "react";
-function Event() {
+function Reservation() {
   return (
     <div className="w-full flex">
       <div className="w-full flex blackgraybg pb-16">
         <div className="w-full text-white flex flex-col items-center">
           <div data-aos="fade-down" className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white pt-12 font-bold font-serif">
-            Events
+            Reservation
           </div>
           <div className="flex items-center mt-4 mb-8">
             <div
@@ -71,4 +71,4 @@ function Event() {
     </div>
   );
 }
-export default Event;
+export default Reservation;
