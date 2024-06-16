@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import Footer from './components/base/footer';
 import Menu from './pages/menu';
+import Event from './pages/events';
 function App() {
   useEffect(()=>{
     Aos.init()
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/menu" element={<Menu />}></Route>
+        <Route path="/event" element={<Event />}></Route>
       </Routes>
       <Footer>
 

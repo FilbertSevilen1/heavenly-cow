@@ -17,7 +17,7 @@ import restaurant4 from "../assets/images/restaurant/restaurant4.webp";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col">
       <Carousel
@@ -82,8 +82,69 @@ function Home() {
         </div>
       </div>
       <div className="blackgraybg" data-aos="fade-down" data-aos-duration="500">
-        <div className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif">
-          Our Menus
+        <div className="w-full flex items-center flex-col mt-8 py-12">
+          <p className="mb-4 text-3xl md:text-4xl xl:text-6xl text-white text-center font-bold font-serif">
+            Our Menus
+          </p>
+          <div className="flex items-center">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="250"
+              data-aos-duration="500"
+              className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+            ></div>
+            <div
+              className=""
+              data-aos="fade"
+              data-aos-delay="250"
+              data-aos-duration="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+              </svg>
+            </div>
+            <div
+              className=""
+              data-aos="fade"
+              data-aos-delay="250"
+              data-aos-duration="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+              </svg>
+            </div>
+            <div
+              className=""
+              data-aos="fade"
+              data-aos-delay="250"
+              data-aos-duration="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+              </svg>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-delay="250"
+              data-aos-duration="500"
+              className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+            ></div>
+          </div>
         </div>
         <div className="w-full flex flex-between flex-wrap bg-black flex-row">
           <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
@@ -128,18 +189,81 @@ function Home() {
           </div>
         </div>
         <div className=" border-b-2 border-zinc-400 text-2xl text-white text-center py-12 font-bold font-serif">
-          <button onClick={()=>navigate("/menu")} className="mb-8 w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
+          <button
+            onClick={() => navigate("/menu")}
+            className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all"
+          >
             Check here for more!
           </button>
         </div>
       </div>
       <div className="blackbg2" data-aos="fade-down" data-aos-duration="500">
-        <div className="mt-8 text-2xl md:text-4xl xl:text-6xl text-white text-center py-12 font-bold font-serif">
-          Our Restaurants
+      <div className="w-full flex items-center flex-col mt-8 py-12">
+          <p className="mb-4 text-3xl md:text-4xl xl:text-6xl text-white text-center font-bold font-serif">
+            Our Restaurants
+          </p>
+          <div className="flex items-center">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="250"
+              data-aos-duration="500"
+              className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+            ></div>
+            <div
+              className=""
+              data-aos="fade"
+              data-aos-delay="250"
+              data-aos-duration="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+              </svg>
+            </div>
+            <div
+              className=""
+              data-aos="fade"
+              data-aos-delay="250"
+              data-aos-duration="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+              </svg>
+            </div>
+            <div
+              className=""
+              data-aos="fade"
+              data-aos-delay="250"
+              data-aos-duration="500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+              </svg>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-delay="250"
+              data-aos-duration="500"
+              className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+            ></div>
+          </div>
         </div>
-        <div
-          className="w-full flex flex-between flex-wrap bg-black flex-row"
-        >
+        
+        <div className="w-full flex flex-between flex-wrap bg-black flex-row">
           <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
             <img
               src={restaurant1}
@@ -182,7 +306,7 @@ function Home() {
           </div>
         </div>
         <div className=" text-2xl text-white text-center py-12 font-bold font-serif">
-          <button className="mb-8 w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
+          <button className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
             Make a Reservation
           </button>
         </div>

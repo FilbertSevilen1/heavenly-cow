@@ -50,7 +50,7 @@ function Footer() {
             </p>
           </div>
           <div className="w-80">
-            <div className="w-80 flex justify-between">
+            <div className="w-full md:w-80 flex justify-between">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"

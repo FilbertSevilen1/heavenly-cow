@@ -1,29 +1,39 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import appetizers1 from '../../assets/images/food/appetizers/Antipasto Platter.webp'
-import appetizers2 from '../../assets/images/food/appetizers/Bruschetta.webp'
-import appetizers3 from '../../assets/images/food/appetizers/Caprese Skewers.webp'
-import appetizers4 from '../../assets/images/food/appetizers/Chicken Satay.webp'
-import appetizers5 from '../../assets/images/food/appetizers/Deviled eggs.webp'
-import appetizers6 from '../../assets/images/food/appetizers/Mini Crab Cakes.webp'
-import appetizers7 from '../../assets/images/food/appetizers/Mini Quesadillas.webp'
-import appetizers8 from '../../assets/images/food/appetizers/Shrimp cocktail.webp'
-import appetizers9 from '../../assets/images/food/appetizers/Spinach and Artichoke Dip.webp'
-import appetizers10 from '../../assets/images/food/appetizers/Stuffed mushrooms.webp'
+import appetizers1 from "../../assets/images/food/appetizers/Antipasto Platter.webp";
+import appetizers2 from "../../assets/images/food/appetizers/Bruschetta.webp";
+import appetizers3 from "../../assets/images/food/appetizers/Caprese Skewers.webp";
+import appetizers4 from "../../assets/images/food/appetizers/Chicken Satay.webp";
+import appetizers5 from "../../assets/images/food/appetizers/Deviled eggs.webp";
+import appetizers6 from "../../assets/images/food/appetizers/Mini Crab Cakes.webp";
+import appetizers7 from "../../assets/images/food/appetizers/Mini Quesadillas.webp";
+import appetizers8 from "../../assets/images/food/appetizers/Shrimp cocktail.webp";
+import appetizers9 from "../../assets/images/food/appetizers/Spinach and Artichoke Dip.webp";
+import appetizers10 from "../../assets/images/food/appetizers/Stuffed mushrooms.webp";
 
-import breakfast1 from '../../assets/images/food/breakfast/breakfast1.webp'
-import breakfast2 from '../../assets/images/food/breakfast/breakfast2.webp'
-import breakfast3 from '../../assets/images/food/breakfast/breakfast3.webp'
-import breakfast4 from '../../assets/images/food/breakfast/breakfast4.webp'
-import breakfast5 from '../../assets/images/food/breakfast/breakfast5.webp'
-import breakfast6 from '../../assets/images/food/breakfast/breakfast6.webp'
-import breakfast7 from '../../assets/images/food/breakfast/breakfast7.webp'
-import breakfast8 from '../../assets/images/food/breakfast/breakfast8.webp'
+import breakfast1 from "../../assets/images/food/breakfast/breakfast1.webp";
+import breakfast2 from "../../assets/images/food/breakfast/breakfast2.webp";
+import breakfast3 from "../../assets/images/food/breakfast/breakfast3.webp";
+import breakfast4 from "../../assets/images/food/breakfast/breakfast4.webp";
+import breakfast5 from "../../assets/images/food/breakfast/breakfast5.webp";
+import breakfast6 from "../../assets/images/food/breakfast/breakfast6.webp";
+import breakfast7 from "../../assets/images/food/breakfast/breakfast7.webp";
+import breakfast8 from "../../assets/images/food/breakfast/breakfast8.webp";
 
 import wagyu from "../../assets/images/food/Wagyu A5.webp";
 import ribeye from "../../assets/images/food/ribeye.webp";
 import sirloin from "../../assets/images/food/sirloin.webp";
 import tenderloin from "../../assets/images/food/tenderloin.webp";
+
+import dessert1 from "../../assets/images/food/desserts/icecream.webp";
+import dessert2 from "../../assets/images/food/desserts/cake.webp";
+import dessert3 from "../../assets/images/food/desserts/fruits.webp";
+import dessert4 from "../../assets/images/food/desserts/icecreamcake.webp";
+
+import drink1 from "../../assets/images/food/drinks/applejuice.webp";
+import drink2 from "../../assets/images/food/drinks/guava.webp";
+import drink3 from "../../assets/images/food/drinks/icelemontea.webp";
+import drink4 from "../../assets/images/food/drinks/orangejuice.webp";
 
 function Menu() {
   const [isSticky, setIsSticky] = useState(false);
@@ -57,7 +67,7 @@ function Menu() {
   };
 
   useEffect(() => {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const threshold = 460; // Adjust this value based on your needs
@@ -79,8 +89,8 @@ function Menu() {
         <div className="w-0 md:w-[400px] hidden md:flex">
           <div
             className={`${
-              isSticky ? "fixed w-[400px] top-0" : "mt-14"
-            }  w-full `}
+              isSticky ? "fixed w-[400px] top-0" : "mt-14 w-[400px]"
+            } `}
           >
             <div className="flex flex-col text-white text-2xl xl:text-4xl gap-0 py-6 px-8 xl:px-12 font-serif font-medium">
               <button
@@ -99,13 +109,7 @@ function Menu() {
                 onClick={() => scrollIntoLunch()}
                 className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:py-6`}
               >
-                Lunch
-              </button>
-              <button
-                onClick={() => scrollIntoDinner()}
-                className={` w-full text-center hover:text-[#ffa200] transition-all font-bold border-b-[0.5px] border-white py-4 xl:py-6`}
-              >
-                Dinner
+                Main Course
               </button>
               <button
                 onClick={() => scrollIntoDesserts()}
@@ -127,15 +131,78 @@ function Menu() {
           data-aos="fade-down"
           data-aos-duration="500"
         >
-          <div>
+          <div className="w-full flex flex-col items-center">
             <div
               ref={appetizers}
-              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white py-12 font-bold font-serif"
+              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white pt-12 font-bold font-serif"
+              data-aos="fade-down"
             >
               Appetizers
             </div>
+            <div className="flex items-center mt-4 mb-8">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+            </div>
             <div className="w-full flex flex-between flex-wrap flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers1}
                   alt="Avatar"
@@ -145,7 +212,10 @@ function Menu() {
                   <div class="text">Antipaso Platter</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers2}
                   alt="Avatar"
@@ -155,7 +225,10 @@ function Menu() {
                   <div class="text">Bruschetta</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers3}
                   alt="Avatar"
@@ -165,7 +238,10 @@ function Menu() {
                   <div class="text">Caprese Skewers</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers4}
                   alt="Avatar"
@@ -175,7 +251,10 @@ function Menu() {
                   <div class="text">Chicken Satay</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers5}
                   alt="Avatar"
@@ -185,7 +264,10 @@ function Menu() {
                   <div class="text">Deviled Eggs</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers6}
                   alt="Avatar"
@@ -195,7 +277,10 @@ function Menu() {
                   <div class="text">Mini Crab Cakes</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers7}
                   alt="Avatar"
@@ -205,7 +290,10 @@ function Menu() {
                   <div class="text">Mini Quesadillas</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers8}
                   alt="Avatar"
@@ -215,17 +303,25 @@ function Menu() {
                   <div class="text">Shrimp Cocktail</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers9}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Spinach and<br></br>Artichoke Dip</div>
+                  <div class="text">
+                    Spinach and<br></br>Artichoke Dip
+                  </div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={appetizers10}
                   alt="Avatar"
@@ -237,15 +333,78 @@ function Menu() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="w-full flex flex-col items-center">
             <div
               ref={breakfast}
-              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white py-12 font-bold font-serif"
+              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white pt-12 font-bold font-serif"
+              data-aos="fade-down"
             >
               Breakfast
             </div>
+            <div className="flex items-center mt-4 mb-8">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+            </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast1}
                   alt="Avatar"
@@ -255,7 +414,10 @@ function Menu() {
                   <div class="text">Tomato Sandwich</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast2}
                   alt="Avatar"
@@ -265,7 +427,10 @@ function Menu() {
                   <div class="text">Butter Pancake</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast3}
                   alt="Avatar"
@@ -275,7 +440,10 @@ function Menu() {
                   <div class="text">Egg Pancake</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast4}
                   alt="Avatar"
@@ -285,7 +453,10 @@ function Menu() {
                   <div class="text">Egg and Ham</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast5}
                   alt="Avatar"
@@ -295,7 +466,10 @@ function Menu() {
                   <div class="text">Waffles</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast6}
                   alt="Avatar"
@@ -305,7 +479,10 @@ function Menu() {
                   <div class="text">Fried Rice</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast7}
                   alt="Avatar"
@@ -315,7 +492,10 @@ function Menu() {
                   <div class="text">Spicy Noodle</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={breakfast8}
                   alt="Avatar"
@@ -327,15 +507,78 @@ function Menu() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="w-full flex flex-col items-center">
             <div
               ref={lunch}
-              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white py-12 font-bold font-serif"
+              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white pt-12 font-bold font-serif"
+              data-aos="fade-down"
             >
-              Lunch
+              Main Course
+            </div>
+            <div className="flex items-center mt-4 mb-8">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
             </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={wagyu}
                   alt="Avatar"
@@ -345,7 +588,10 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={ribeye}
                   alt="Avatar"
@@ -355,7 +601,10 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={tenderloin}
                   alt="Avatar"
@@ -365,47 +614,10 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={sirloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={wagyu}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Wagyu A5</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={ribeye}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={tenderloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
                   src={sirloin}
                   alt="Avatar"
@@ -417,272 +629,246 @@ function Menu() {
               </div>
             </div>
           </div>
-          <div>
-            <div
-              ref={dinner}
-              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white py-12 font-bold font-serif"
-            >
-              Dinner
-            </div>
-            <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={wagyu}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Wagyu A5</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={ribeye}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={tenderloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={sirloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={wagyu}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Wagyu A5</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={ribeye}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={tenderloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={sirloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
+          <div className="w-full flex flex-col items-center">
             <div
               ref={desserts}
-              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white py-12 font-bold font-serif"
+              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white pt-12 font-bold font-serif"
+              data-aos="fade-down"
             >
               Desserts
             </div>
+            <div className="flex items-center mt-4 mb-8">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+            </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={wagyu}
+                  src={dessert1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Wagyu A5</div>
+                  <div class="text">Ice Cream</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={ribeye}
+                  src={dessert2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
+                  <div class="text">Cakek</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={tenderloin}
+                  src={dessert3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
+                  <div class="text">Fruits</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={sirloin}
+                  src={dessert4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={wagyu}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Wagyu A5</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={ribeye}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={tenderloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={sirloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
+                  <div class="text">Coconut Water</div>
                 </div>
               </div>
             </div>
           </div>
-          <div>
+          <div className="w-full flex flex-col items-center">
             <div
               ref={drinks}
-              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white py-12 font-bold font-serif"
+              className="text-center md:text-left mt-8 text-3xl md:text-4xl xl:text-6xl text-white pt-12 font-bold font-serif"
+              data-aos="fade-down"
             >
               Drinks
             </div>
+            <div className="flex items-center mt-4 mb-8">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                className=""
+                data-aos="fade"
+                data-aos-delay="250"
+                data-aos-duration="500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="#ffa200" d="m19 12l-7 10l-7-10l7-10" />
+                </svg>
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="250"
+                data-aos-duration="500"
+                className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
+              ></div>
+            </div>
             <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={wagyu}
+                  src={drink1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Wagyu A5</div>
+                  <div class="text">Apple Juice</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={ribeye}
+                  src={drink2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
+                  <div class="text">Guava Juice</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={tenderloin}
+                  src={drink3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
+                  <div class="text">Ice Lemon Tea</div>
                 </div>
               </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
+              <div
+                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
+                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
+              >
                 <img
-                  src={sirloin}
+                  src={drink4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
                 />
                 <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={wagyu}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Wagyu A5</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={ribeye}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Rib-eye Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={tenderloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Tenderloin Steak</div>
-                </div>
-              </div>
-              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]" style={{boxShadow:"4px 4px 8px 0px rgba(0,0,0,0.4)"}}>
-                <img
-                  src={sirloin}
-                  alt="Avatar"
-                  class="image w-full h-full object-cover"
-                />
-                <div class="overlay">
-                  <div class="text">Sirloin Steak</div>
+                  <div class="text">Orange Juice</div>
                 </div>
               </div>
             </div>
