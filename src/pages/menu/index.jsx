@@ -199,11 +199,9 @@ function Menu() {
               ></div>
             </div>
             <div className="w-full flex flex-between flex-wrap flex-row">
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -212,11 +210,9 @@ function Menu() {
                   <div class="text">Antipaso Platter</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -225,11 +221,9 @@ function Menu() {
                   <div class="text">Bruschetta</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -238,11 +232,9 @@ function Menu() {
                   <div class="text">Caprese Skewers</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -251,11 +243,9 @@ function Menu() {
                   <div class="text">Chicken Satay</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers5}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -264,11 +254,9 @@ function Menu() {
                   <div class="text">Deviled Eggs</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers6}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -277,11 +265,9 @@ function Menu() {
                   <div class="text">Mini Crab Cakes</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers7}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -290,11 +276,9 @@ function Menu() {
                   <div class="text">Mini Quesadillas</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers8}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -303,11 +287,9 @@ function Menu() {
                   <div class="text">Shrimp Cocktail</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers9}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -318,11 +300,9 @@ function Menu() {
                   </div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={appetizers10}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -400,12 +380,10 @@ function Menu() {
                 className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
               ></div>
             </div>
-            <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+            <div className="w-full flex flex-between flex-wrap flex-row">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -414,11 +392,9 @@ function Menu() {
                   <div class="text">Tomato Sandwich</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -427,11 +403,9 @@ function Menu() {
                   <div class="text">Butter Pancake</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -440,11 +414,9 @@ function Menu() {
                   <div class="text">Egg Pancake</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -453,11 +425,9 @@ function Menu() {
                   <div class="text">Egg and Ham</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast5}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -466,11 +436,9 @@ function Menu() {
                   <div class="text">Waffles</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast6}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -479,11 +447,9 @@ function Menu() {
                   <div class="text">Fried Rice</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast7}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -492,11 +458,9 @@ function Menu() {
                   <div class="text">Spicy Noodle</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={breakfast8}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -574,12 +538,10 @@ function Menu() {
                 className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
               ></div>
             </div>
-            <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+            <div className="w-full flex flex-between flex-wrap flex-row">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={wagyu}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -588,11 +550,9 @@ function Menu() {
                   <div class="text">Wagyu A5</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={ribeye}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -601,11 +561,9 @@ function Menu() {
                   <div class="text">Rib-eye Steak</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={tenderloin}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -614,11 +572,9 @@ function Menu() {
                   <div class="text">Tenderloin Steak</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={sirloin}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -696,12 +652,10 @@ function Menu() {
                 className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
               ></div>
             </div>
-            <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+            <div className="w-full flex flex-between flex-wrap flex-row">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={dessert1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -710,11 +664,9 @@ function Menu() {
                   <div class="text">Ice Cream</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={dessert2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -723,11 +675,9 @@ function Menu() {
                   <div class="text">Cakek</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={dessert3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -736,11 +686,9 @@ function Menu() {
                   <div class="text">Fruits</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={dessert4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -818,12 +766,10 @@ function Menu() {
                 className="w-16 md:w-32 h-[2px] bg-[#ffa200] mx-8"
               ></div>
             </div>
-            <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+            <div className="w-full flex flex-between flex-wrap flex-row">
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={drink1}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -832,11 +778,9 @@ function Menu() {
                   <div class="text">Apple Juice</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={drink2}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -845,11 +789,9 @@ function Menu() {
                   <div class="text">Guava Juice</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={drink3}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
@@ -858,11 +800,9 @@ function Menu() {
                   <div class="text">Ice Lemon Tea</div>
                 </div>
               </div>
-              <div
-                class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]"
-                style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
-              >
+              <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
                 <img
+                  style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
                   src={drink4}
                   alt="Avatar"
                   class="image w-full h-full object-cover"
