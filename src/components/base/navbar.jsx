@@ -38,17 +38,17 @@ function Navbar() {
         <div
           className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}
         >
+          <NavbarButton name="Reservation" link="/reservation"></NavbarButton>
+        </div>
+        <div
+          className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}
+        >
           <NavbarButton name="Gallery" link="/gallery"></NavbarButton>
         </div>
         <div
           className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}
         >
           <NavbarButton name="About" link="/about"></NavbarButton>
-        </div>
-        <div
-          className={`border-b-black hover:border-b-[#ffa200] border-b-4 transition-all`}
-        >
-          <NavbarButton name="Reservation" link="/reservation"></NavbarButton>
         </div>
       </div>
     </div>

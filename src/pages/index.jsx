@@ -24,7 +24,7 @@ function Home() {
         data-aos="fade-up"
         data-aos-once="true"
         slide={true}
-        className="w-full h-96 md:h-[900px] bg-black shadow-2xl"
+        className="w-full h-96 md:h-[900px] shadow-2xl"
       >
         <div className="w-full shadow-xl">
           <img
@@ -50,7 +50,7 @@ function Home() {
         </div>
       </Carousel>
 
-      <div className="w-full flex flex-between bg-black flex-col md:flex-row">
+      <div className="w-full flex flex-between flex-col md:flex-row">
         <img
           src={chef}
           className="w-full mt-4 md:mt-0 max-h-[500px] md:max-h-[700px] md:w-1/4 object-cover"
@@ -146,42 +146,46 @@ function Home() {
             ></div>
           </div>
         </div>
-        <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+        <div className="w-full flex flex-between flex-wrap flex-row">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={wagyu}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Wagyu A5</div>
             </div>
           </div>
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={ribeye}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Rib-eye Steak</div>
             </div>
           </div>
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={tenderloin}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Tenderloin Steak</div>
             </div>
           </div>
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={sirloin}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Sirloin Steak</div>
@@ -191,7 +195,7 @@ function Home() {
         <div className=" border-b-2 border-zinc-400 text-2xl text-white text-center py-12 font-bold font-serif">
           <button
             onClick={() => navigate("/menu")}
-            className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all"
+            className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all"
           >
             Check here for more!
           </button>
@@ -263,42 +267,46 @@ function Home() {
           </div>
         </div>
         
-        <div className="w-full flex flex-between flex-wrap bg-black flex-row">
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+        <div className="w-full flex flex-between flex-wrap flex-row">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={restaurant1}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">South Marina</div>
             </div>
           </div>
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={restaurant2}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Dragonverse Mall</div>
             </div>
           </div>
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={restaurant3}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Global Shopping Center</div>
             </div>
           </div>
-          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px]">
+          <div class="container w-1/2 xl:w-1/4 h-48 sm:h-64 xl:h-[500px] p-1">
             <img
               src={restaurant4}
               alt="Avatar"
               class="image w-full h-full object-cover"
+              style={{ boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.4)" }}
             />
             <div class="overlay">
               <div class="text">Hig-End Hotel</div>
@@ -306,7 +314,7 @@ function Home() {
           </div>
         </div>
         <div className=" text-2xl text-white text-center py-12 font-bold font-serif">
-          <button className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl bg-black hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
+          <button className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
             Make a Reservation
           </button>
         </div>

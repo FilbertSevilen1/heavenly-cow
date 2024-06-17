@@ -5,3 +5,53 @@
 *{
   font-family:sans-serif;
 }
+
+.input-reservation{
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 8px;
+  transition: 250ms all ease;
+  font-size: 22px;
+}
+.input-reservation:hover{
+  border: none;
+  border-bottom: 2px solid orange;
+}
+.input-reservation:focus{
+  border: none;
+  border-bottom: 2px solid orange;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+option {
+  margin: 40px;
+  background: black;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delimiter-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+.delimiter-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+.delimiter-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+          line-clamp: 4; 
+  -webkit-box-orient: vertical;
+}
