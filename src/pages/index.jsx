@@ -314,7 +314,7 @@ function Home() {
           </div>
         </div>
         <div className=" text-2xl text-white text-center py-12 font-bold font-serif">
-          <button className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
+          <button onClick={()=>navigate('/reservation')} className="mb-8 w-64 md:w-96 p-6 text-white border-2 border-white rounded-xl hover:scale-105 hover:bg-zinc-900 active:scale-100 transition-all">
             Make a Reservation
           </button>
         </div>
