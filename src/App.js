@@ -17,6 +17,7 @@ function App() {
   },[])
   return (
     <BrowserRouter>
+    <div className='overflow-x-hidden'>
       <Navbar>
         
       </Navbar>
@@ -31,6 +32,8 @@ function App() {
       <Footer>
 
       </Footer>
+    </div>
+
     </BrowserRouter>
   );
 }
